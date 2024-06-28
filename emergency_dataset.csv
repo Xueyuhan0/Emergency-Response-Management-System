@@ -1,0 +1,8 @@
+emergency_id,type,severity,location
+1,Fire,5,Downtown
+2,Medical,3,Suburbs
+3,Police,4,City Center
+4,Fire,2,Industrial Area
+5,Medical,1,Residential Area
+6,Police,5,University Campus
+7,Fire,3,Shopping District
