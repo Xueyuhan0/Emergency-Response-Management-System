@@ -24,7 +24,7 @@ class TestLinkedListPriorityQueue(unittest.TestCase):  # 定义一个继承自un
         self.assertEqual(pq.extract_max(), None)    # 当队列为空时，调用`extract_max`方法并断言其返回值为None。
 
 
-    def test_search_and_change_priority(self):
+    def test_search(self):
         pq = LinkedListPriorityQueue()
         pq.insert('task1', 1)
         pq.insert('task2', 5)
@@ -32,9 +32,14 @@ class TestLinkedListPriorityQueue(unittest.TestCase):  # 定义一个继承自un
         node = pq.search('task2')
         self.assertIsNotNone(node)
         self.assertEqual(node.priority, 5)
+
+    def test_change_priority(self):
+        pq = LinkedListPriorityQueue()
+        pq.insert('task1', 1)
+        pq.insert('task2', 5)
+        pq.insert('task3', 3)
         pq.change_priority('task3', 6)
         self.assertEqual(pq.extract_max(), 'task3')
-
 
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)

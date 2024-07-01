@@ -23,15 +23,22 @@ class TestMinHeap(unittest.TestCase):
         self.assertEqual(pq.extract_max(), 'task2')
         self.assertEqual(pq.extract_max(), None)
 
-    def test_search_and_change_priority(self):
+    def test_search(self):
         pq = MinHeap()
         pq.insert('task1', 5)
         pq.insert('task2', 1)
         pq.insert('task3', 3)
         node = pq.search('task2')
         self.assertIsNotNone(node)
+
+    def test_change_priority(self):
+        pq = MinHeap()
+        pq.insert('task1', 5)
+        pq.insert('task2', 1)
+        pq.insert('task3', 3)
         pq.change_priority('task3', 6)
         self.assertEqual(pq.extract_max(), 'task3')
+
 
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)

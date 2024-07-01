@@ -24,8 +24,7 @@ class TestBSTPriorityQueue(unittest.TestCase):  # 定义一个名为TestBSTPrior
         self.assertEqual(pq.extract_max(), 'task1')    # 再次调用extract_max并断言其返回值为'task1'。
         self.assertEqual(pq.extract_max(), None)    # 调用extract_max并断言其返回值为None，因为此时队列已经为空。 
 
-
-    def test_search_and_change_priority(self):
+    def test_search(self):
         pq = BSTPriorityQueue()
         pq.insert('task1', 1)
         pq.insert('task2', 5)
@@ -33,9 +32,14 @@ class TestBSTPriorityQueue(unittest.TestCase):  # 定义一个名为TestBSTPrior
         node = pq.search('task2')
         self.assertIsNotNone(node)
         self.assertEqual(node.priority, 5)
+
+    def test_change_priority(self):
+        pq = BSTPriorityQueue()
+        pq.insert('task1', 1)
+        pq.insert('task2', 5)
+        pq.insert('task3', 3)
         pq.change_priority('task3', 6)
         self.assertEqual(pq.extract_max(), 'task3')
-
 
 if __name__ == '__main__':
     unittest.main(argv=['first-arg-is-ignored'], exit=False)
