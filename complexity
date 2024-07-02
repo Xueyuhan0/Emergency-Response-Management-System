@@ -1,0 +1,18 @@
+time complexity
+(1)link:
+insert:O(n)
+remove:O(1)
+visit:O(n)
+(2)tree:
+insert:O(log n)
+remove:O(log n)
+visit:O(log n)
+(3)minheap:
+insert:O(log n)
+remove:O(log n)
+visit:O(n)
+
+space complexity
+(1)link:O(n)
+(2)tree:O(n)
+(3)minheap:O(n)
