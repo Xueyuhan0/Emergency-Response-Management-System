@@ -72,9 +72,11 @@ _UI Update and Clear Functions_: update_listbox method: Update the list box (sel
 
 ## Running and Debugging of Project
 ![test debug](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/test%20debug.png)<br/>
-This image shows the test debug。<br/>
+This image shows the test debug.<br/>
 ![coverage report](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/coverage%20report.png)<br/>
 This image shows the coverage of detection. <br/>
+![coverage report](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/result1.png)<br/>
+This image shows a queue sorted using three methods and provides the time for inserting and deleting elements, respectively.<br/>
 
 
 
