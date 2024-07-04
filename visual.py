@@ -15,6 +15,16 @@ class EmergencyQueueApp:
         self.frame = tk.Frame(self.root)
         self.frame.pack(pady=20)
         
+
+
+        self.structure_label = tk.Label(self.frame, text="Select Data Structure:")
+        self.structure_label.pack(side=tk.TOP)
+        
+        self.structure_var = tk.StringVar()
+        self.structure_var.set("Heap")  # Default to Heap
+        self.structure_dropdown = tk.OptionMenu(self.frame, self.structure_var, "Heap", "Linked List", "Binary Search Tree")
+        self.structure_dropdown.pack(side=tk.TOP)
+
         self.queue_listbox = tk.Listbox(self.frame, height=15, width=50)
         self.queue_listbox.pack(side=tk.LEFT, padx=10)
         self.queue_listbox.bind('<Motion>', self.show_details)
@@ -103,7 +113,7 @@ class EmergencyQueueApp:
         self.id_entry.delete(0, tk.END)
         self.type_entry.delete(0, tk.END)
         self.severity_entry.delete(0, tk.END)
-        self.location_entry.delete(0, tk.END)
+        self.location_entry.delete(0, tk.END) 
         self.x_entry.delete(0, tk.END)
         self.y_entry.delete(0, tk.END)
 
