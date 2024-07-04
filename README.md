@@ -1,10 +1,6 @@
 # __Abstract__ 
-
-# __Catalogue__
-## __Description Of Project__
 In this project, our team will develop an emergency response management system for a city. The system will prioritize emergency situations based on their severity and ensure that the most critical issues are addressed first. We will use three different data structures (linked list, binary tree, and heap) to implement priority queues and compare their efficiency and complexity.<br/>
-
-
+# __Catalogue__
 ## __Requirement Analysis of Project__
 1. Functional requirements<br/>
 Emergency Event Input:The system should be able to input new emergency events, such as event type, location, preliminary assessment of severity, etc.<br/>
