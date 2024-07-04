@@ -75,6 +75,8 @@ _UI Update and Clear Functions_: update_listbox method: Update the list box (sel
 This image shows the test debug.<br/>
 ![coverage report](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/coverage%20report.png)<br/>
 This image shows the coverage of detection. <br/>
+![efficiency analysis](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/efficiency%20analysis.png)<br/>
+We chose the Big O calc website to help us calculate the temporal and spatial complexity of our code.<br/>
 ![result1](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/result1.png)<br/>
 This image shows a queue sorted using three methods and provides the time for inserting and deleting elements, respectively.<br/>
 ![result2-main_k](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/result2-main_k.png)<br/>
