@@ -38,7 +38,7 @@ _Extract-max_: It extracts the node with the lowest priority (i.e. the head node
 The BSTNode class represents the nodes of a binary search tree, each node containing data and priority.<br/>
 _BSTPriority Queue_:Class encapsulates a binary search tree and provides insertion and extraction of maximum values.<br/>
 _extract-max_:Extract and return the node with the highest priority using the maximum value extraction method. It uses the recursive auxiliary function - extract max: to find this node and its parent node.<br/>
-_inorder_ :Used to display relevant information about nodes in the tree. <br/>                           
+_inorder_ :Used to display relevant information about nodes in the tree.                            
 The TestBSTPriorityQueue class defines the test method test insert extract. First, create the BSTPriorityQueue object.<br/>
 Insert three tasks into the queue, each with its associated priority (integer). Extract the highest priority task from the queue using the maximum value extraction method, and verify whether the extracted task meets expectations using the self.assertEqual assertion method. This process should be repeated three times, and the highest priority task should be extracted each time.<br/>
 
