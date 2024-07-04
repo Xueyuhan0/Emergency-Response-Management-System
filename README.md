@@ -71,5 +71,5 @@ _UI Interaction Function_: remove_item method: Ensure removal of an emergency ev
 _UI Update and Clear Functions_: update_listbox method: Update the list box (self.queue_listbox) to display summarized information about all current emergency events stored in the smallest heap (self.queue.heap). This maintains synchronization between UI and data after adding or removing events.clear_entries method: Clear all input fields to facilitate the entry of new emergency information without interference from previous data.<br/>
 
 ##Running and Debugging of Project
-![test debug](图片地址，本地链接或者URL地址。)
+![test debug](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/test%20debug.png)
 
