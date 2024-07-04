@@ -70,6 +70,6 @@ The add emergency method is called when the user clicks the "Add Emergency" butt
 _UI Interaction Function_: remove_item method: Ensure removal of an emergency event from both the display list (self.queue_listbox) and the underlying data structure (self.queue.heap) is synchronized. Deleting directly from self.queue_listbox and attempting to remove from self.queue.heap by index can lead to synchronization issues. Instead:Remove the item from self.queue.heap.Update self.queue_listbox to reflect the updated list after removal.show_details method: Implement a tooltip feature for displaying detailed information when hovering over an emergency event in the list box. Since Tkinter's Listbox doesn't support tooltips by default, consider using additional libraries like ttk's Tooltip or custom solutions.<br/>
 _UI Update and Clear Functions_: update_listbox method: Update the list box (self.queue_listbox) to display summarized information about all current emergency events stored in the smallest heap (self.queue.heap). This maintains synchronization between UI and data after adding or removing events.clear_entries method: Clear all input fields to facilitate the entry of new emergency information without interference from previous data.<br/>
 
-##Running and Debugging of Project
+## Running and Debugging of Project
 ![test debug](https://github.com/Xueyuhan0/Emergency-Response-Management-System/blob/2/test%20debug.png)
 
